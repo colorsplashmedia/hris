@@ -1,0 +1,61 @@
+.sorting, .sorting_asc, .sorting_desc {
+    background : none !important;
+}
+
+.navbar-default {	
+   	color: white;
+}
+
+.navbar-static-top {
+	background-color: #F5F5F5;
+}
+
+.iancustom {
+	background-color: #C59312 !important;
+}
+
+.totalFigures {
+	font-size: 26px;
+}
+	
+
+.navbar-default > li > a:hover{
+    background-color:#c1a301;
+    color: white;
+}
+
+#memberNameLeftNav {
+	text-align: center; 
+	font-weight: bold; 
+	font-size: 16px; 
+	color: #fbf4ab;
+}
+
+#userNameLeftNav {
+	text-align: center; 
+	font-size: 12px;
+	margin: 0px 0px 40px 0px; 
+	color: #e6e09c;
+}
+
+a.leftNav {
+	color: #fbf4ab !important;
+}
+
+
+.navbar-default .navbar-nav > .active > a:focus {
+    color: white;
+    background-color: #c1a301 !important;
+}
+
+.navbar-default .navbar-nav > .open > a:focus {
+    color: white;
+    background-color: #c1a301 !important;
+}
+
+.navbar-default .nav > li > a:focus, .nav > li > a:hover {
+	background-color: #FFBF00 !important;
+	color: white;
+}
+
+

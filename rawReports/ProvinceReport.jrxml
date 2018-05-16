@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.1.0.final using JasperReports Library version 6.1.0  -->
+<!-- 2016-04-22T16:48:29 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ProvinceReport" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="5de1c11f-ba38-4c82-bb3f-b90d59956027">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="inventorydai"/>
+	<parameter name="departmentId" class="java.lang.Integer"/>
+	<parameter name="dateRangeParam" class="java.lang.String"/>
+	<parameter name="HOSPITAL_NAME" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="provinceName" class="java.lang.String"/>
+	<pageHeader>
+		<band height="58">
+			<staticText>
+				<reportElement x="0" y="26" width="555" height="23" uuid="e0a52b81-3e5b-4fbd-9b3e-352e5377b4a3"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PROVINCE LIST REPORT]]></text>
+			</staticText>
+			<textField pattern="dd MMMMM yyyy">
+				<reportElement x="386" y="43" width="162" height="15" uuid="432be928-1708-4794-97bb-a1c6238a82c0">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Print Date: " +  new SimpleDateFormat("dd/MM/yyyy").format(new java.util.Date())]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="0" width="555" height="23" uuid="de33bfea-7645-4624-8404-5319b3060eff">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{HOSPITAL_NAME}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="31">
+			<rectangle>
+				<reportElement x="-1" y="1" width="555" height="30" backcolor="#E8EDFF" uuid="b94a1c64-7662-490f-b59f-b45108cac028">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineColor="#E8EDFF"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="30" forecolor="#5A668E" uuid="c36feae4-1b22-4751-8379-9d3368a918cf">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[   Province Name]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="554" height="30" uuid="19cdbbb6-8e59-4b2e-909c-fede2a52535c">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#E8EDFF"/>
+					<leftPen lineWidth="1.0" lineColor="#E8EDFF"/>
+					<bottomPen lineWidth="1.0" lineColor="#E8EDFF"/>
+					<rightPen lineWidth="1.0" lineColor="#E8EDFF"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA["    " + $F{provinceName}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

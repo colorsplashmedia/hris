@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.1.0.final using JasperReports Library version 6.1.0  -->
+<!-- 2015-07-25T19:46:49 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="employeeList" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="316b3b76-79c2-4823-8ec7-b2c181c7b253">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="hrisdai"/>
+	<queryString>
+		<![CDATA[select * from employee]]>
+	</queryString>
+	<field name="empId" class="java.lang.Integer"/>
+	<field name="empNo" class="java.lang.String"/>
+	<field name="lastname" class="java.lang.String"/>
+	<field name="firstname" class="java.lang.String"/>
+	<field name="middlename" class="java.lang.String"/>
+	<field name="dateOfBirth" class="java.sql.Timestamp"/>
+	<field name="gender" class="java.lang.String"/>
+	<field name="civilStatus" class="java.lang.String"/>
+	<field name="nationality" class="java.lang.String"/>
+	<field name="street" class="java.lang.String"/>
+	<field name="cityId" class="java.lang.Integer"/>
+	<field name="email" class="java.lang.String"/>
+	<field name="mobileNo" class="java.lang.String"/>
+	<field name="telNo" class="java.lang.String"/>
+	<field name="birthPlace" class="java.lang.String"/>
+	<field name="provinceId" class="java.lang.Integer"/>
+	<field name="zipCode" class="java.lang.String"/>
+	<field name="jobTitleId" class="java.lang.Integer"/>
+	<field name="departmentId" class="java.lang.Integer"/>
+	<field name="divisionId" class="java.lang.Integer"/>
+	<field name="employeeTypeId" class="java.lang.Integer"/>
+	<field name="empStatus" class="java.lang.String"/>
+	<field name="employmentDate" class="java.sql.Timestamp"/>
+	<field name="endOfContract" class="java.sql.Timestamp"/>
+	<field name="sss" class="java.lang.String"/>
+	<field name="gsis" class="java.lang.String"/>
+	<field name="hdmf" class="java.lang.String"/>
+	<field name="tin" class="java.lang.String"/>
+	<field name="phic" class="java.lang.String"/>
+	<field name="taxstatus" class="java.lang.String"/>
+	<field name="picLoc" class="java.lang.String"/>
+	<field name="superVisor1Id" class="java.lang.Integer"/>
+	<field name="superVisor2Id" class="java.lang.Integer"/>
+	<field name="superVisor3Id" class="java.lang.Integer"/>
+	<field name="username" class="java.lang.String"/>
+	<field name="password" class="java.lang.String"/>
+	<field name="createdBy" class="java.lang.String"/>
+	<field name="creationDate" class="java.sql.Timestamp"/>
+	<field name="countryId" class="java.lang.Integer"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

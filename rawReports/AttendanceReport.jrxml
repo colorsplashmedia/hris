@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.1.0.final using JasperReports Library version 6.1.0  -->
+<!-- 2015-08-10T18:07:42 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="AttendanceReport" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e871b183-3989-493d-bea6-7a19f17de477">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="hrisdai"/>
+	<parameter name="empId" class="java.lang.Integer">
+		<parameterDescription><![CDATA[]]></parameterDescription>
+	</parameter>
+	<parameter name="imageSrc" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[select * from employee]]>
+	</queryString>
+	<field name="empId" class="java.lang.Integer"/>
+	<field name="empNo" class="java.lang.String"/>
+	<field name="lastname" class="java.lang.String"/>
+	<field name="firstname" class="java.lang.String"/>
+	<field name="middlename" class="java.lang.String"/>
+	<field name="dateOfBirth" class="java.sql.Timestamp"/>
+	<field name="gender" class="java.lang.String"/>
+	<field name="civilStatus" class="java.lang.String"/>
+	<field name="nationality" class="java.lang.String"/>
+	<field name="street" class="java.lang.String"/>
+	<field name="cityId" class="java.lang.Integer"/>
+	<field name="email" class="java.lang.String"/>
+	<field name="mobileNo" class="java.lang.String"/>
+	<field name="telNo" class="java.lang.String"/>
+	<field name="birthPlace" class="java.lang.String"/>
+	<field name="provinceId" class="java.lang.Integer"/>
+	<field name="zipCode" class="java.lang.String"/>
+	<field name="jobTitleId" class="java.lang.Integer"/>
+	<field name="departmentId" class="java.lang.Integer"/>
+	<field name="divisionId" class="java.lang.Integer"/>
+	<field name="employeeTypeId" class="java.lang.Integer"/>
+	<field name="empStatus" class="java.lang.String"/>
+	<field name="employmentDate" class="java.sql.Timestamp"/>
+	<field name="endOfContract" class="java.sql.Timestamp"/>
+	<field name="sss" class="java.lang.String"/>
+	<field name="gsis" class="java.lang.String"/>
+	<field name="hdmf" class="java.lang.String"/>
+	<field name="tin" class="java.lang.String"/>
+	<field name="phic" class="java.lang.String"/>
+	<field name="taxstatus" class="java.lang.String"/>
+	<field name="picLoc" class="java.lang.String"/>
+	<field name="superVisor1Id" class="java.lang.Integer"/>
+	<field name="superVisor2Id" class="java.lang.Integer"/>
+	<field name="superVisor3Id" class="java.lang.Integer"/>
+	<field name="username" class="java.lang.String"/>
+	<field name="password" class="java.lang.String"/>
+	<field name="createdBy" class="java.lang.String"/>
+	<field name="creationDate" class="java.sql.Timestamp"/>
+	<field name="countryId" class="java.lang.Integer"/>
+	<background>
+		<band splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+		</band>
+	</background>
+	<title>
+		<band height="802" splitType="Stretch">
+			<image hAlign="Center" vAlign="Middle">
+				<reportElement x="0" y="0" width="555" height="802" uuid="03d794b5-c974-43f2-999d-01491daf1e02"/>
+				<imageExpression><![CDATA[$P{imageSrc}]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="72" y="115" width="100" height="15" uuid="a1d73da2-8b7f-49d0-88e8-7e310b1b379d"/>
+				<textFieldExpression><![CDATA[$F{lastname}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+</jasperReport>
